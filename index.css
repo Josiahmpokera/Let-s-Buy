@@ -1,0 +1,361 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+}
+.navigation{
+    width: 100%;
+    position: fixed;
+    background-color: black
+}
+
+.navigation-list{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.righNavigation{
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+
+}
+.navigationItems ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    margin: 10px;
+}
+
+.righNavigation ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    margin: 10px;
+}
+.navigationItems li{
+    font-size: 17px;
+    margin: 10px;font-family: Segoe UI;
+}
+.navigationItems a{
+    color: white;
+    text-decoration: none;
+}
+.navigationItems a:hover{
+    color: grey;
+    transition: 0.3s;
+}
+.righNavigation li{
+    margin: 10px;
+    font-size: 17px;
+    font-family: Segoe UI;
+}
+.righNavigation li:hover{
+    color: gray;
+}
+
+.body{
+    padding-top: 100px;
+    background-color: rgb(255, 123, 0);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.body{
+    padding-bottom: 100px;
+}
+.right-images{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.imageOne{
+    margin-top: 90px;
+    margin-left: 300px;
+}
+
+.left-description h1{
+    padding-top: 90px;
+    padding-left: 30px;
+    font-size: 50px;
+    font-family: Segoe UI;
+    color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 20px;
+}
+.buttons input{
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    width: 130px;
+    border-radius: 20px;
+}
+/* Customize the Button in Difference*/
+.buttons #button1{
+    color: rgb(255, 123, 0);;
+    font-size: 15px;
+    font-weight:bold;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+}
+
+.buttons #button2{
+    color: rgb(255, 123, 0);
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.buttons #button2:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.buttons #button1:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+    border: none;
+    background-color: white;
+    columns: rgb(255, 123, 0);
+}
+
+/* The Home Page is ALready heere*/
+
+.icon_down{
+    margin-top: -40px;
+    border-radius: 100%;
+    padding: 05px;
+    transition: 0.2s;
+    background-color: rgb(255, 123, 0);;
+}
+.icon_down img{
+    transition: 0.3s;
+}
+.main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon_down:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+/* The Items List Styling here */
+
+.itemHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+
+.items{
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.container{
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgb(97, 96, 96) 1px 3px 10px;
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+.itemList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.container{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+/* Sign Up Form */
+
+.navigation-signup{
+    width: 100%;
+    position: fixed;
+    background-color: black
+}
+.navigation-list-signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.righNavigation-signup{
+    display: flex;
+    flex-direction: row;
+ 
+ }
+ .navigationItems-signup ul{
+     list-style: none;
+     color: white;
+     display: flex;
+     margin: 10px;
+ }
+ 
+ .righNavigation-signup ul{
+     color: white;
+     list-style: none;
+     display: flex;
+     margin: 10px;
+ }
+ .navigationItems-signup li{
+     font-size: 17px;
+     margin: 10px;font-family: Segoe UI;
+ }
+ .navigationItems-signup a{
+     color: white;
+     text-decoration: none;
+ }
+ .navigationItems-signup a:hover{
+     color: grey;
+     transition: 0.3s;
+ }
+
+ /* Form Design here */
+
+ .body-signup{
+     padding-top: 140px;
+     width: 100%;
+     height: 770px;
+     background-color: rgb(255, 123, 0);
+}
+
+.form-container{
+    transition: 0.3s;
+    box-shadow: rgba(22, 21, 21, 0.562) 1px 4px 10px;
+    font-family: segoe UI;
+    margin-top: 23px;
+    widows: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(238, 104, 14);
+}
+.header1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form-left h1{
+    font-family: segoe UI;
+    font-weight: 800;
+    color: white;
+    font-size: 43px;
+}
+.form-right{
+    padding: 40px;
+    background-color: white;
+}
+
+.form-right input[type="text"]{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid orange;
+}
+.form-right input[type="email"]{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid orange;
+}
+.form-right input[type="password"]{
+    border: none;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid orange;
+}
+
+.form-right input[type="submit"]{
+    margin-top: 10px;
+    padding: 09px;
+    color: white;
+    width: 100px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(238, 104, 14);;
+}
+
+.form-right input[type="reset"]{
+    margin-top: 10px;
+    padding: 09px;
+    color:  rgb(238, 104, 14);
+    width: 100px;
+    outline: none;
+    border: 1px solid  rgb(238, 104, 14);;
+    cursor: pointer;
+    background-color:white;
+}
+
+.form-right input[type="submit"]:hover{
+    background-color: rgb(216, 95, 14);
+}
+
+/* Gender Customizatrion here*/
+.gender{
+    padding-top: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.form-right input[type="radio"]{
+    transform: scale(1.3);
+}
+.form-right p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/*The Login Styling here */
+
+
+
+
+
+
+
+
+
+
+
+
+
