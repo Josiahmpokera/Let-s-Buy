@@ -1,3 +1,4 @@
+<?php include('connect.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,10 @@
 
             <div class="righNavigation">
                 <ul>
-                    <li><a href="login.php" style="text-decoration: none; color: white; font-weight: bold;">Login</a></li>
+                    <li><a href="login.php" style="text-decoration: none; color: white; font-weight: bold;">Logout</a></li>
+                    <?php  if(isset($_SESSION['success'])) ?>
+                    <?php if(isset($_SESSION['fname'])); ?>
+                    <label style="text-decoration: none; color: white; font-weight: bold; font-family: arial; margin-top: 13px; color: orangered;" for=""><?php echo $_SESSION['fname']; ?></label>
                     <li style="font-weight: bold;"><a href="#" style="text-decoration: none; color: whitesmoke;">Cart</a></li>
                     <img src="assets/shopping_cart_big.png" width="40px" height="40px" alt="">
                 </ul>
