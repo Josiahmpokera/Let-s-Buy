@@ -12,7 +12,7 @@
         <div class="navigation-signup">
                 <div class="navigation-list-signup">
                     <div class="logo">
-                        <a href="indexx.php"><img src="assets/logo.png" width="100px" height="70px" alt=""></a>
+                        <a href="index.php"><img src="assets/logo.png" width="100px" height="70px" alt=""></a>
                     </div>
                     <div class="navigationItems">
                         <ul>
@@ -50,6 +50,7 @@
                         <p style="padding-top: 10px; color: rgb(87, 79, 79);">Have an Account? <a href="login.php" style="text-decoration: none; color: white; font-weight: 500;">Login</a></p>
                     </div>
                     <div class="form-right">
+                    <?php require_once 'connect.php' ?>
                          <form action="connect.php" method="POST">
                                  <p>First Name</p>
                              <input type="text" name="fname" required ><br>
