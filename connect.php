@@ -3,7 +3,7 @@
 <?php
 
 session_start();
-$mysql = new mysqli('localhost', 'root', '', 'buyme_online_shopping') or die (mysqli_error($mysqli));
+$mysql = new mysqli('localhost', 'root', '', 'buyme_new') or die (mysqli_error($mysqli));
 
 if(isset($_POST["button"])){
     $fname = $_POST["fname"];
@@ -22,3 +22,35 @@ $_SESSION['cust_fname'] = $fname;
 $_SESSION['success'] = "You're now Logged in ";
 header('location: index.php'); //This Redirect the Page into INDEX.PHP
 }
+
+
+//Login Session here
+
+if(isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if(count(mysqli_error($mysql)) == 0) {
+        $password = md5($password);
+        $query = "SELECT * FROM customer WHERE cust_email='$email' AND password='$password'";
+        $result = mysql_query($mysql, $query);
+        if(mysql_num_rows($result) == 1) {
+            $_SESSION['cust_email'] = $email;
+            $_SESSION['success'] = "You're now Logged in";
+            header('location: index.php'); 
+        } else {
+            array_push($error, "The Username/ Password Invalid");
+            //header('location: login.php');
+        }
+    }
+}
+
+
+//Logout Statement
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['fname']);
+    header('location: login.php');
+}
+
+?>

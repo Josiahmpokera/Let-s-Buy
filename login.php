@@ -1,3 +1,5 @@
+<?php include('connect.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,15 +51,15 @@
                         <p style="padding-top: 10px; color: rgb(87, 79, 79);">Don't have an Account? <a href="sign-up.php" style="text-decoration: none; color: white; font-weight: 500;">Sign Up</a></p>
                     </div>
                     <div class="form-right">
-                         <form action="" method="POST">
-                
+                    <?php require_once 'connect.php' ?>
+                         <form method="POST" action="index.php">
                              <p>Email</p>
                              <input type="email" name="email" required><br>
                              <p>Password</p>
                              <input type="password" name="password" required><br>
                              <p><a href="#" style="text-decoration: none; margin-top: 10px; color: rgb(216, 95, 14); font-weight: 500;">Forget Password?</a></p>
                              <div class="submitOptions">
-                                    <input type="submit" value="Sign Up">
+                            <input type="submit" value="SignUp" name="login">
                              </div>
                          </form>       
                     </div>
