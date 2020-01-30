@@ -1,4 +1,8 @@
-<?php include('connect.php'); ?>
+<?php include('connect.php'); 
+
+
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +35,8 @@
                     <li><a href="login.php?logout='1'" style="text-decoration: none; color: white; font-weight: bold;">Logout</a></li>
                     <?php  if(isset($_SESSION['success'])) ?>
                     <?php if(isset($_SESSION['fname'])); ?>
-                    <label style="text-decoration: none; color: white; font-weight: bold; font-family: arial; color: orangered;" for=""><?php echo $_SESSION['fname']; ?></label>
-                    <li style="font-weight: bold;"><a href="#" style="text-decoration: none; color: whitesmoke;">Cart</a></li>
+                    <label style="text-decoration: none; color: white; font-weight: bold; font-family: arial; color: orangered; margin-top: 13px" for=""><?php echo $_SESSION['cust_fname']; ?></label>
+                    <label style="text-decoration: none; color: white; font-weight: bold; font-family: arial; color: orangered; margin-top: 13px" for=""><?php echo $_SESSION['cust_lname']; ?></label>
                     <img src="assets/shopping_cart_big.png" width="40px" height="40px" alt="">
                 </ul>
             </div>

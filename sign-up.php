@@ -58,16 +58,10 @@
                              <input type="text" name="lname" required><br>
                              <p>Email</p>
                              <input type="email" name="email" required><br>
-                            <div class="gender">
-                                <span style="font-size: 18px; font-weight: 400;">Gender: </span>
-                                <div class="genderValues">
-                                        Male <input type="radio" name="gender" required> Female <input type="radio" name="gender" required>
-                                </div> 
-                            </div>
                              <p>Password</p>
-                             <input type="password" name="password" required><br>
+                             <input type="password" required><br>
                              <p>Confirm Password</p>
-                             <input type="password" name="cpassword" required><br>
+                             <input type="password" name="password" required><br>
                              <div class="submitOptions">
                                     <input type="submit" value="Sign Up" name="button">
                                     <input type="reset" value="Clear">
