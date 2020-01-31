@@ -86,6 +86,8 @@
         <div class="itemList">
             <div class="container">
                 <img src="assets/trending.png" height="200px" width="200px" alt="">
+                <p style="color: orangered">
+            </p>
             </div>
             <div class="container">
                 <img src="assets/headphone.png" height="200px" width="200px" alt="">

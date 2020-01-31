@@ -1,0 +1,611 @@
+* {
+    scroll-behavior: smooth;
+    font-family: Arial;
+    margin: 0;
+}
+
+.navigation {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    box-shadow: 3px 3px 12px  rgba(0, 0, 0, 0.301);
+    grid-template-columns: 10% 20% 30% 40%;
+    background-color: #19AEF1;
+}
+.nav-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-list li {
+    margin: 10px;
+    list-style: none;
+    color: aliceblue;
+}
+.nav-list li a {
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.nav-list  a:hover {
+    transition: 0.3s;
+    border-bottom: 2px solid white;
+}
+#drop {
+    display: none;
+    position: absolute;
+    text-align: left;
+    margin-left: -30px;
+    background-color: black;
+}
+
+.nav-list #Cate:hover .drop{
+    display: block;
+}
+
+.right-login ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.right-login {
+    margin-left: auto;
+}
+.right-login li {
+    font-family: Arial Rounded MT;
+    margin: 10px;
+    list-style: none;
+    color: aliceblue;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*
+Jumping to the Searching Bar here 
+*/
+.search-engine {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.search-engine input {
+    margin: 10px;
+    border: none;
+    padding: 04px;
+    padding-left: 10px;
+    width: 90%;
+}
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 05px;
+    left: 20px;
+    float: right;
+    position: relative;
+    margin-left: -30px;
+    border: none;
+    color: #fff;
+    background-color: #707070;
+    font-size: 12px;
+    cursor: pointer;
+}
+button:focus {
+    background-color: black;
+    transition: 0.4s;
+}
+
+/*
+ Jump in the mainn  Container here 
+*/
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
+.main-container {
+    padding-top: 10px;
+}
+.main-container h1 {
+    font-size: 68px;
+    color: #19AEF1;
+}
+.main-container .title-container {
+    margin-top: 06%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*
+    Products here
+*/
+
+
+/*
+Main Main COntainer
+*/
+#id{
+    background-color: #19AEF1;
+}
+.radical {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.small-container {
+    background-color: #19AEF1;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: -90px;
+    transition: 0.3s;
+}
+.small-container:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    background-color: #707070;
+}
+.title-small p {
+    font-size: 34px;
+    padding-top: 20px;
+    color: #707070;
+    text-align: center;
+    font-family: Arial Rounded MT;
+}
+.grid-view {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.grid-view div {
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+.row input {
+    background-color: #19AEF1;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+   
+}
+.row input:hover {
+    box-shadow: 1px 1px 10px 03px rgba(0, 0, 0, 0.144);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+Footer Section in the End
+*/
+.footer {
+    color: white;
+    flex-wrap: wrap;
+    padding: 23px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    background-color: #19AEF1;
+}
+.left-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icons {
+    display: flex;
+    padding: 10px;
+}
+.contact-items {
+    display: flex;
+}
+.links li {
+    list-style: none;
+    padding-top: 10px;
+}
+.contact-items {
+    padding-top: 10px;
+}
+
+
+/*
+    JUMP ONTO THYE NEW PAGE LOGIN IN ACCOUNT
+    THEREFORE I USE ONE STYLE IN ALL
+    OF MY PAGES TO REDUCE THE TIME
+*/
+
+.account {
+    padding-top: 06%;
+    padding-bottom: 10px;
+}
+.account h2 {
+    color: #707070;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.form-container {
+    background-color: #19AEF1;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 35px;
+    transition: 0.4s;
+    margin-top: 25px;
+}
+.form-container:hover {
+    transition: 0.4s;
+    box-shadow: 1px 3px 23px rgba(0, 0, 0, 0.582);
+}
+
+
+.form-container input[type="text"]{
+    width: 90%;
+    padding: 08px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.form-container input {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    margin: 20px;
+    outline: none;
+    color: white;
+    font-size: 17px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+
+.form-container input[type="email"]{
+    width: 90%;
+    color: white;
+    padding: 08px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.form-container input[type="password"]{
+    width: 90%;
+    padding: 08px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.form-container input[type="submit"]{
+    width: 93%;
+    padding: 10px;
+    margin-top: 33px;
+    color: #19AEF1;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.form-container input[type="submit"]:hover {
+    background-color: rgb(235, 238, 238);
+}
+
+/* 
+ERROR PASSWORD
+*/
+
+#error {
+    display: none;
+}
+.error-container {
+    display: flex;
+    background-color: aliceblue; 
+     width: 38%; text-align: center; border-radius: 03px; 
+    margin-left: 04%;
+    color: black;
+    padding: 05px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.error-container p {
+    margin-top: 4px;
+}
+
+
+
+/* 
+Jump into Responsiverness of the Web View
+*/
+
+@media screen and (max-width: 1024px){
+    /*
+    starting eith Navigation bar
+    Navigation Bar
+    */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+@media screen and (max-width: 425px){
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: #19AEF1;
+    }
+
+    .nav-list ul {
+        background-color: #19AEF1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nav-list li {
+        background-color: #19AEF1;
+        margin: 10px;
+        list-style: none;
+        color: aliceblue;
+    }
+    .nav-list li a {
+        font-family: Arial Rounded MT;
+        font-style: normal;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        transition: 0.3s;
+    }
+    .search-engine input {
+        padding: 13px;
+        margin: 0px;
+    }
+    .search-engine {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        justify-content: center;
+    }
+    button {
+        float: center;
+        margin: 0px;
+        position: static;
+        margin-left: -30px;
+    }
+
+}
+
+
+/*
+Description Form in ANother Layout
+*/
+
+
+
+
+
+
+
+.description-containers {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 50% 50%;
+}
+.items-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.items-photo .image {
+    margin: 10px;
+}
+
+
+
+/*
+Product Category Page here
+*/
+
+
+
+
+
+
+.list-items {
+    padding-left: 10%;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #79767691;
+}
+.list-items ul {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+.list-items a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.4s;
+}
+.list-items a:hover {
+    padding: 10px;
+    background-color: #19AEF1;
+}
+.list-items a:focus {
+    background-color: #19AEF1;
+}
+.products-lists {
+    margin-top: 02%;
+    margin-left: 10%;
+    margin-right: 05%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-lists div {
+    margin: 20px;
+}
+
+/*
+    Admin Panel & Dashboard Panel
+*/
+
+
+
+
+
+
+
+
+
+
+.main-container-dashboard {
+    display: flex;
+}
+
+.side-bar-dashboard {
+    height: 100vh;
+    width: 300px;
+    color: white;
+    background-color: #19AEF1;
+}
+.listing-dashboard ul {
+    list-style: none;
+    margin-top: 100px;
+}
+.listing-dashboard li {
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.4s;
+    padding: 15px;
+    width: 100%;
+}
+.listing-dashboard a {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+.listing-dashboard a:hover {
+    transition: 0.3s;
+   color: grey;
+}
+.listing-dashboard a:focus{
+    color: grey;
+}
+
+.main-bar {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.top-dashboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+}
+.top-dashboard h2 {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-family: arial;
+    font-weight: 100;
+}
+
+/*
+ Form Design in Admin Panel
+*/
+.form-dashboard {
+    padding: 20px;
+    color: grey;
+    margin-left: 25%;
+    margin-top: 02%;
+    margin-right: 25%;
+}
+.form-dashboard p {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form-dashboard input {
+    width: 97%;
+    padding: 07px;
+    border: 1px solid #19AEF1;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: grey;
+}
+.form-dashboard input[type="submit"]{
+    width: 100%;
+    background-color: #19AEF1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-dashboard input[type="submit"]:hover {
+    background-color: rgb(17, 153, 216);
+}
+.form-dashboard select {
+    width: 100%;
+    padding: 07px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: grey;
+}
+.form-dashboard textarea {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: grey;
+    margin-bottom: 10px;
+}
+/*
+    Data Container in Dashboard
+*/
+
+.data-container {
+    margin-top: 05%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.data-container .product {
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(231, 61, 117);
+}
+.data-container .sales {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin: 10px;
+    background-color: rgb(16, 172, 99);
+}
+
